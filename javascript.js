@@ -81,3 +81,73 @@ function surfaceCercle(){
 
         
         //exo6:
+
+    var tab=[-2,1,4];
+    function soustrait(x)
+    {
+    if (x >= 0) return (x-2); else return "Nombre négatif!";
+    }
+    function affiche()
+    {
+    alert(soustrait(tab[0]));
+    alert(soustrait(tab[tab.length-1]));
+    }
+    
+    //exo7:
+
+    function jourDeLaSemaine(){
+        var aujourdhui= new Date;
+        jour=aujourdhui.getDay();
+        var jourFrancais ;
+        switch (jour) {
+        case 0 : jourFrancais="dimanche";break;
+        case 1 : jourFrancais="lundi";break;
+        case 2 : jourFrancais="mardi";break;
+        case 3 : jourFrancais="mercredi";break;
+        case 4 : jourFrancais="jeudi";break;
+        case 5 : jourFrancais="vendredi";break;
+        case 6 : jourFrancais="samedi";break;
+        default: jourFrancais="jour inexistant"; break;
+        }
+        alert("Nous sommes "+jourFrancais+".");
+        }
+
+    //exo10:
+
+    
+    function MouseRollover(MyImage) 
+    {
+        MyImage.src = "img1.jpg";
+    }
+    function MouseOut(MyImage) 
+    {
+        MyImage.src = "img2.jpeg";
+    }
+
+    //exo12:
+
+    var myWindow;
+
+            function openWin() 
+            {
+            myWindow = window.open("", "myWindow", "width=200, height=200");
+            myWindow.document.write("<p>coucou</p>");
+            }
+
+            function moveWin() 
+            {
+            myWindow.moveBy(50, 50);
+            myWindow.focus();
+            }
+
+            function moveWinRelative() 
+            {
+            myWindow.moveBy(-50, -50);
+            myWindow.focus();
+            }
+
+            function resizeWin() 
+            {
+                myWindow.resizeTo(300, 100);
+                myWindow.focus();
+            }
