@@ -124,6 +124,17 @@ function surfaceCercle(){
         MyImage.src = "img2.jpeg";
     }
 
+    //exo11:
+
+    function ModifParagraphe(){
+        return 0;
+    }
+    var element=document.getElementById(id);
+
+    function Centrage_H1(){
+        return 0;
+    }
+
     //exo12:
 
     var myWindow;

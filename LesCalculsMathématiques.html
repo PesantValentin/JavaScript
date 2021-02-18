@@ -81,7 +81,7 @@ onclick="jourDeLaSemaine()">Lancer la fonction</button></p>
 <button onclick="resizeWin()">Resize window</button>
 
 
-<!--exo 13-->
+<!--exo 14-->
 <p>Exo13</p>
 
 <form>
@@ -90,10 +90,10 @@ onclick="jourDeLaSemaine()">Lancer la fonction</button></p>
         <input type="text" value="Valou" id="idprenom" name="idprenom" />
         <label for="idnom">Nom:</label>
         <input type="text" value="Pesant" id="idnom" name="idnom" />
-        <label for="idage">Age</label>
+        <label for="idage">Age:</label>
         <input type="text" value="23" id="idage" name="idage" />
 
-        <input type="reset" value="Reset">
+        <button onclick="document.Reset('idprenom,idnom,idage').value = ''">Reset</button>
         <input type="submit" value="Submit">
     </div>
 </form>
